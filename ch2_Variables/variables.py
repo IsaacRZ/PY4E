@@ -91,5 +91,3 @@ print("Hello",name)
 #mnemonic variable names: mnemonic means “memory aid”
 #avoid reserved words
 #chose variable names that reflect their intent regarding what data will be stored in each variable
-
-

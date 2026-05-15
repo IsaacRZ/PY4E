@@ -15,7 +15,7 @@ float(3.14)
 str(42) 
 
 import math
-print(math) #Module object named math
+#print(math) #Module object named math
 # access the functions within the module use math.function()
 signal_power = 10
 noise_power = 1
@@ -31,7 +31,7 @@ math.sin(radians)
 
 #Random
 import random
-#Pseudorandom because are created by deterministic computation. 
+#Pseudorandom because are created by deterministic computation -> predictable results always.  
 #Number between 0.0 and 1.0, including 0.0 but not 1.0
 for i in range(10):
     x = random.random()
@@ -49,6 +49,10 @@ random.choice(t)
 
 #Defining, storing the function 
 #               () -> doesnt take any arguments as input 
+def print_lyrics():         # Header of the function: 
+    print("Holaaa")             # Body: first statement
+    print("Holaaa")             # Body of the function all indented 
+    print("Holaaa 2")           # Body 
 
 # Creates a variable named print_lyrics and is type function
 #Invokes or calls
@@ -59,11 +63,52 @@ def repeat_lyrics():
     print_lyrics()
     print_lyrics()
     
-def print_lyrics():         # Header: 
-    print("Holaaa")             # Body first statement
-    print("Holaaa")             # Body  all indented 
-    print("Holaaa 2")           # Body
 
-repeat_lyrics()
+#repeat_lyrics()
 
-#Function definition creates a function object 
+#Function definition creates a function object, and generates no output
+# 
+#Flow of execution
+#order in which statements are executed
+# When reading a program: makes more sense if you follow the flow of execution
+
+# Parameters and arguments
+#Inside the function the arguments are assigned to variables called Parameters
+#This function assigns the argument(when calling the function) to a parameter named bruce (defined when using def function_name(parameter))
+#When the function is called, it prints the value of the parameter
+
+def print_twice(bruce): # Parameter -> bruce
+    print(bruce)
+    print(bruce)
+
+#print_twice("Sam "*4)   # Argument ->  "Sam "*4
+
+# Fruitful functions and void functions
+
+#  yield results    | |  don’t return a value
+#fruitful function: 
+x = math.cos(radians)
+golden = (math.sqrt(5) + 1) / 2         # In the interactive mode in the terminal using python, this is prompted but in a script it needs a print
+#print(golden)
+
+# Void functions dont return a value.
+# When you try to assign it to a variable it displays a special value: None
+
+#result = print_twice('Hola')
+#print(result)
+#print(type(result))     # Special class type called None
+
+# Fruitful function return a result from the function 
+def add_two(a,b):       # Parameters: a, b
+    added = a + b
+    return added
+
+x = add_two(1,2)        # Arguments: 1, 2
+print(x)
+print(type(x))     # Class type int
+
+# Why functions? 
+#   - Name and group a set of statements, program is easier to read, understand and debug
+#   - Eliminate repetive code. Reuse code.
+#   - Dividing a long program into functions allows to debug the fraction parts one at a time, then integrating all as a whole.
+#   - Well-design functions are often useful for many programs. 

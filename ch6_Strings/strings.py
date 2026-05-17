@@ -13,6 +13,9 @@
 fruit = 'banana'
 #print(len(fruit))
 
+#More elegant to use a for than a while   
+# For  is deciding how long the loop is going to run.
+# When you are done or not and moving through all the iterative variable in sequence:
 #index = 0 
 #while index < len(fruit):
 #    letter = fruit[index]
@@ -20,16 +23,15 @@ fruit = 'banana'
 #    index += 1
 #    #print(letter, index)
 #
-
 # Use a definite for loop
 #fruit = 'banana'
 #for letter in fruit:
 #    print(letter)
 
-fruit = 'banana'
-count = 0
-
-for letter in fruit:        # Iteration variable: letter IN the sequence: fruit
-    if letter == 'a':
-        count += 1
-    print(letter,'  cuenta a: ',count)
+#fruit = 'banana'
+#count = 0
+#
+#for leter in fruit:        # Iteration variable: letter IN the sequence: fruit
+#    if leter == 'a':
+#        count += 1
+#    print(leter,'  cuenta a: ',count)

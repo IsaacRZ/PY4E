@@ -13,3 +13,6 @@ n = 5
 #    print(line)
 #print('Done!')
 
+# Sometimes called indefined loops: keep going till break hits or until a value remains true = logical condition becomes false.
+# Defined loops run defined number of times.
+# Run finite number of times. iterates through the members of a list, set
